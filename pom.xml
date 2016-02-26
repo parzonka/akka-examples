@@ -8,10 +8,10 @@
 	<description>Akka examples</description>
 
 	<properties>
-		<scala.major.version>2.10</scala.major.version>
-		<scala.patch.version>6</scala.patch.version>
-		<spark.version>1.5.2</spark.version>
-		<akka.version>2.3.14</akka.version>
+		<scala.major.version>2.11</scala.major.version>
+		<scala.patch.version>7</scala.patch.version>
+		<spark.version>1.6.0</spark.version>
+		<akka.version>2.4.2</akka.version>
 	</properties>
 
 	<dependencies>
@@ -41,6 +41,27 @@
 			<artifactId>akka-actor_${scala.major.version}</artifactId>
 			<version>${akka.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.typesafe.akka</groupId>
+			<artifactId>akka-http-experimental_${scala.major.version}</artifactId>
+			<version>2.4.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.typesafe.akka</groupId>
+			<artifactId>akka-http-core-experimental_${scala.major.version}</artifactId>
+			<version>2.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.typesafe.akka</groupId>
+			<artifactId>akka-http-spray-json-experimental_${scala.major.version}</artifactId>
+			<version>2.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.typesafe.akka</groupId>
+			<artifactId>akka-stream-experimental_${scala.major.version}</artifactId>
+			<version>2.0.3</version>
+		</dependency>
+
 
 
 
