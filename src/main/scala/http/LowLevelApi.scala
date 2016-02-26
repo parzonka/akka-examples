@@ -10,7 +10,10 @@ import com.typesafe.config.{ ConfigFactory, Config }
 import scala.concurrent.Future
 import akka.stream.scaladsl.Sink
 
-object HttpServer extends App {
+/**
+ * Uses the low level http and routing API
+ */
+object LowLevelApi extends App {
   implicit val system = ActorSystem("akka-http-sample")
   implicit val materializer = ActorMaterializer()
   val serverSource = Http().bind(interface = "localhost", port = 8080)
@@ -34,5 +37,5 @@ object HttpServer extends App {
     connection handleWithSyncHandler requestHandler
 
   }).run()
-
+  println(s"Server online at http://localhost:8080/")
 }
